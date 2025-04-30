@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - VK's Infinite Computer Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .back-to-home {
+            display: block;
+            margin-top: 10px;
+            font-size: 1em;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .back-to-home:hover {
+            text-decoration: underline;
+        }
+
+        header img.logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="VK's Infinite Computer Solutions Institution" class="logo">
+    </header>
+
+    <div class="form-container">
+        <h2>Log In</h2>
+        <form action="login.php" method="POST">
+            <input type="text" name="username" class="input-field" placeholder="Username" required>
+            <input type="password" name="password" class="input-field" placeholder="Password" required>
+            <button class="submit-btn" type="submit">Sign In</button>
+        </form>
+        <a href="forgot-password.html" class="back-to-home">Forgot Password?</a>
+        <a href="signup.html" class="back-to-home">Don't have an account? Sign Up</a>
+    </div>
+</body>
+</html>

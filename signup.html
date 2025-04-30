@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - VK's Infinite Computer Solutions</title>
+    <style>
+        /* Styles here */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 150px; /* Adjust logo size */
+            height: auto;
+        }
+
+        .section-container {
+            width: 100%;
+            max-width: 350px;
+            margin: 20px 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .submit-btn,
+        .reset-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px; /* Added margin between buttons */
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .reset-btn {
+            background-color: #f0f0f0;
+            color: #333;
+            border: none;
+            margin-top: 15px; /* Ensuring reset button is below the submit button */
+        }
+
+        .reset-btn:hover {
+            background-color: #ddd;
+        }
+
+        .back-to-login {
+            display: block;
+            margin-top: 10px;
+            font-size: 1em;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .back-to-login:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="VK's Infinite Computer Solutions Institution" class="logo">
+    </header>
+    
+    <div class="section-container">
+        <div class="form-container">
+            <h2>Sign Up</h2>
+            <form action="signup.php" method="POST">
+                <input type="text" name="first_name" class="input-field" placeholder="First Name" required>
+                <input type="text" name="last_name" class="input-field" placeholder="Last Name" required>
+                <input type="email" name="email" class="input-field" placeholder="Email" required>
+                <input type="text" name="phone_number" class="input-field" placeholder="Phone Number" required>
+                <input type="text" name="username" class="input-field" placeholder="Username" required>
+                <input type="password" name="password" class="input-field" placeholder="Password" required>
+                
+                <!-- Submit button -->
+                <button class="submit-btn" type="submit">Submit</button>
+                
+                <!-- Reset button -->
+                <button class="reset-btn" type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

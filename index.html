@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - VK's Infinite Computer Solutions Institution</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+      background-size: cover;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgb(55, 2, 52); /* Text will be white for better visibility */
+    }
+
+    header {
+      margin-bottom: 20px;
+      margin-top: -40px; /* Added negative margin to bring logo upwards */
+    }
+
+    .logo {
+      width: 225px; /* 1.5x bigger */
+      height: auto;
+      filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.7)); /* optional nice shadow */
+    }
+
+    main {
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* slight text shadow for visibility */
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .begin-btn {
+      padding: 12px 25px;
+      font-size: 1.2em;
+      background-color: rgba(76, 175, 80, 0.8); /* semi-transparent green */
+      color: rgb(90, 14, 229);
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .begin-btn:hover {
+      background-color: rgba(69, 160, 73, 0.9);
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="VK's Infinite Computer Solutions Institution" class="logo">
+    </header>      
+
+<main>
+  <h1>Welcome to VK's Infinite Computer Solutions Institution</h1>
+  <p>Please click the button below to begin.</p>
+  <a href="login.html" class="begin-btn">Begin</a>
+</main>
+
+</body>
+</html>
