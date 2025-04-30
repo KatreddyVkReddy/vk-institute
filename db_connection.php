@@ -1,10 +1,10 @@
 <?php
 // Database credentials
-$host = "192.168.29.111"; // PostgreSQL host
-$port = "5432";
-$dbname = "vk_institute"; // PostgreSQL database name
-$user = "reddy"; // PostgreSQL username
-$password = "reddy"; // PostgreSQL password
+$host     = getenv("DB_HOST");
+$port     = getenv("DB_PORT");
+$dbname   = getenv("DB_NAME");
+$user     = getenv("DB_USER");
+$password = getenv("DB_PASS");
 
 // Establishing a connection to PostgreSQL
 $conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");
